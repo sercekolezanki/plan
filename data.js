@@ -103,6 +103,34 @@ const schedule = [
         "lecturer": "Dr. Kowalski",
         "group": 1,
         "id": 9
+    },
+    //21II
+    {
+        "lessonTime": 7,
+        "lessonDate": "2025-02-21",
+        "lecturer": "Dr. Kowalski",
+        "group": 1,
+        "id": 6
+    },
+    {
+        "lessonTime": 8,
+        "lessonDate": "2025-02-21",
+        "lecturer": "Dr. Kowalski",
+        "group": 1,
+        "id": 6
+    },
+    {
+        "lessonTime": 9,
+        "lessonDate": "2025-02-21",
+        "lecturer": "Dr. Kowalski",
+        "group": 1,
+        "id": 2
+    },
+    {
+        "lessonTime": 10,
+        "lessonDate": "2025-02-21",
+        "lecturer": "Dr. Kowalski",
+        "group": 1,
+        "id": 2
     }
-    
 ]

@@ -42,6 +42,7 @@
     <h1>Edytor planu dnia</h1>
     <label>Data: <input type="date" id="lessonDate"></label>
     <table border="1">
+        <form>
         <tr>
             <th>Godzina</th>
             <th>Przedmiot</th>
@@ -60,7 +61,10 @@
             }
         </script>
     </table>
-    <button onclick="generateSchedule()">Generuj plan</button>
+    <input type="button" onclick="generateSchedule()" value="Generuj plan">
+    <button type="clear">czyść</button>
+</form>
     <pre id="output"></pre>
+    
 </body>
 </html>
