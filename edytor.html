@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edytor planu dnia</title>
+    <script>
+        const subjects = [
+            { name: "Grafika komputerowa", short: "OGR" },
+            { name: "Język angielski", short: "JAN" },
+            { name: "Matematyka dyskretna", short: "MATD" },
+            { name: "Podstawy automatyki", short: "PAU" },
+            { name: "Podstawy elektroniki", short: "PEL" },
+            { name: "Programowanie inżynierskie Matlab", short: "PIM" },
+            { name: "Programowanie obiektowe", short: "PRO" },
+            { name: "Przedmioty ogólnouczelniane", short: "POU" },
+            { name: "Wychowanie fizyczne", short: "W-F" },
+            { name: "Algorytmy i struktury danych", short: "lol" }
+        ];
+        
+        function generateSchedule() {
+            const date = document.getElementById("lessonDate").value;
+            let schedule = [];
+            document.querySelectorAll(".lesson-row").forEach((row, index) => {
+                const lessonTime = index + 1;
+                const subjectId = row.querySelector("select").value;
+                if (subjectId !== "") {
+                    schedule.push({
+                        lessonTime,
+                        lessonDate: date,
+                        lecturer: "Dr. Kowalski",
+                        group: 1,
+                        id: parseInt(subjectId)
+                    });
+                }
+            });
+            document.getElementById("output").textContent = JSON.stringify(schedule, null, 4);
+        }
+    </script>
+</head>
+<body>
+    <h1>Edytor planu dnia</h1>
+    <label>Data: <input type="date" id="lessonDate"></label>
+    <table border="1">
+        <tr>
+            <th>Godzina</th>
+            <th>Przedmiot</th>
+        </tr>
+        <script>
+            for (let i = 1; i <= 10; i++) {
+                document.write(`<tr class="lesson-row">
+                    <td>${i}</td>
+                    <td>
+                        <select>
+                            <option value="">Wybierz</option>
+                            ${subjects.map((sub, index) => `<option value="${index}">${sub.name}</option>`).join('')}
+                        </select>
+                    </td>
+                </tr>`);
+            }
+        </script>
+    </table>
+    <button onclick="generateSchedule()">Generuj plan</button>
+    <pre id="output"></pre>
+</body>
+</html>

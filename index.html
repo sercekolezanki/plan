@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Zajęć</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mu main">
+    <header>
+        <div id="clock">00:00:00</div>
+        <div id="date">01/01/2025</div>
+        <marquee>Katedra Informatyczna</marquee>
+    </header>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nr</th>
+                    <th>Godzina</th>
+                    <th>A1</th>
+                    <th>A2</th>
+                    <th>B1</th>
+                    <th><input type="date" class="mu data" ></th>
+                </tr>
+            </thead>
+            <tbody id="scheduleBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
