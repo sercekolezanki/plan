@@ -29,7 +29,7 @@ function populateSchedule() {
             
             let lesson = schedule.find(l => l.lessonTime === i + 1 && l.group === g && l.lessonDate === selectedDate);
             if (lesson) {
-                row += `<td class='clickable' onclick="showInfo('${lesson.lecturer}', ${g})">
+                row += `<td class='clickable' onclick="showInfo('${lesson.type}', ${g})">
                             ${subject[lesson.id].short}
                             <div class='progress-bar progress${g}' id='progress-${i}-${g}'></div>
                         </td>`;
@@ -43,8 +43,8 @@ function populateSchedule() {
     updateProgressBars();
 }
 
-function showInfo(lecturer, group) {
-    alert(`Zajęcia prowadzi: ${lecturer}, Grupa: ${group}`);
+function showInfo(type, group) {
+ //dokończ :3 wariacie
 }
 
 function updateProgressBars() {
