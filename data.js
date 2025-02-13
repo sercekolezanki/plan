@@ -1,7 +1,9 @@
 const types=["Wykład","Ćwiczenia","Laboratoria"];
 
 
-
+function eI(wykladowca,sala){
+return{owner:wykladowca,sala:sala};
+}
 
 
 const subject = [
@@ -93,7 +95,7 @@ const schedule = [
     "lessonTime": 7,
     "lessonDate": "2025-02-17",
     "type": 0,
-    "note": "",
+    "note": "208/353",
     "group": 1
   },
   {
@@ -117,7 +119,7 @@ const schedule = [
     "lessonTime": 1,
     "lessonDate": "2025-02-24",
     "type": 0,
-    "note": "",
+    "note": "517/365;121/bibl.",
     "group": 1
   },
   {
@@ -149,7 +151,7 @@ const schedule = [
     "lessonTime": 6,
     "lessonDate": "2025-02-24",
     "type": 0,
-    "note": "",
+    "note": "4/353",
     "group": 1
   },
   {
@@ -211,7 +213,7 @@ const schedule = [
     "lessonTime": 1,
     "lessonDate": "2025-02-18",
     "type": 0,
-    "note": "",
+    "note": "18/353",
     "group": 1
   },
   {
