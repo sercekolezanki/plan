@@ -6,6 +6,9 @@ body {
     background-color: #f4f4f4;
 }
 
+.log{
+    color:red;
+}
 header {
     background-image: linear-gradient(180deg, transparent, #1133ff 80%);
     display: flex;

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analiza Kolorów</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="date" id="datePicker">
+    <input type="file" id="imageInput" accept="image/*">
+    <input type="range" id="spacing" min="5" max="100" value="20">
+    <input type="number" id="startPosition" value="0">  
+    <input type="number" id="xOffset"  value="0">  
+    <input type="number" id="groupInput" min="1" value="1">
+    <button id="generate">Wygeneruj JSON</button>
+    <canvas id="canvas"></canvas>
+    <pre id="output"></pre>
+    <script src="data.js"></script>
+    <script>
+        const imageInput = document.getElementById('imageInput');
+        const datePicker = document.getElementById('datePicker');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const spacingInput = document.getElementById('spacing');
+        const startPositionInput = document.getElementById('startPosition');
+        const xOffsetInput = document.getElementById('xOffset');
+        const groupInput = document.getElementById('groupInput');
+        const output = document.getElementById('output');
+        let image = new Image();
+        let spacing = 20;
+        let startPosition = 0;
+        let xOffset = 0;
+        
+        imageInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    image.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+        
+        image.onload = () => {
+            canvas.width = 100;  // Ustawienie szerokości na 100px dla pionowego wycinka
+            canvas.height = image.height;
+            drawTargets();
+        };
+        
+        spacingInput.addEventListener('input', (event) => {
+            spacing = parseInt(event.target.value, 10);
+            drawTargets();
+        });
+        
+        startPositionInput.addEventListener('input', (event) => {
+            startPosition = parseInt(event.target.value, 10);
+            drawTargets();
+        });
+        
+        xOffsetInput.addEventListener('input', (event) => {
+            xOffset = parseInt(event.target.value, 10);
+            drawTargets();
+        });
+        
+        function drawTargets() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(image, xOffset, 0, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < 12; i++) {
+                const y = startPosition + i * spacing + spacing / 2;
+                const color = getColorAt(canvas.width / 2, y);
+                ctx.beginPath();
+                ctx.arc(canvas.width / 2, y, 5, 0, 2 * Math.PI);
+                ctx.fillStyle = color;
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+        
+        function getColorAt(x, y) {
+            const pixel = ctx.getImageData(x, y, 1, 1).data;
+            return `#${pixel[0].toString(16).padStart(2, '0')}${pixel[1].toString(16).padStart(2, '0')}${pixel[2].toString(16).padStart(2, '0')}`;
+        }
+        
+
+        document.getElementById('generate').addEventListener('click', () => {
+            let colorsList = [];
+            for (let i = 0; i < 12; i++) {
+                const y = startPosition + i * spacing + spacing / 2;
+                const color = getColorAt(canvas.width / 2, y);
+                if(color!="#000000" &&color!="#ffffff")
+                colorsList.push({ id:findColor(color) , lessonTime: i + 1, lessonDate: datePicker.value, type: 0, note: " ", group: parseInt(groupInput.value, 10),});
+            }
+            output.textContent = JSON.stringify(colorsList, null, 2);
+        });
+    </script>
+</body>
+</html>
