@@ -576,7 +576,7 @@ const schedule = [
     "lessonTime": 7,
     "lessonDate": "2025-02-21",
     "type": 0,
-    "note": "",
+    "note": "307/353",
     "group": 1
   },
   {
@@ -592,7 +592,7 @@ const schedule = [
     "lessonTime": 9,
     "lessonDate": "2025-02-21",
     "type": 0,
-    "note": "",
+    "note": "307/353",
     "group": 1
   },
   {
@@ -743,5 +743,324 @@ const schedule = [
     "type": 0,
     "note": "",
     "group": 1
-  }
+  },
+  //2
+  {
+    "id": 8,
+    "lessonTime": 4,
+    "lessonDate": "2025-02-17",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 8,
+    "lessonTime": 5,
+    "lessonDate": "2025-02-17",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 7,
+    "lessonDate": "2025-02-17",
+    "type": 0,
+    "note": "208/353",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 8,
+    "lessonDate": "2025-02-17",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 9,
+    "lessonDate": "2025-02-17",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },{
+    "id": 1,
+    "lessonTime": 1,
+    "lessonDate": "2025-02-24",
+    "type": 0,
+    "note": "517/365;121/bibl.",
+    "group": 2
+  },
+  {
+    "id": 1,
+    "lessonTime": 2,
+    "lessonDate": "2025-02-24",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 8,
+    "lessonTime": 3,
+    "lessonDate": "2025-02-24",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 8,
+    "lessonTime": 4,
+    "lessonDate": "2025-02-24",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 6,
+    "lessonDate": "2025-02-24",
+    "type": 0,
+    "note": "117/353",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 7,
+    "lessonDate": "2025-02-24",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },{
+    "id": 1,
+    "lessonTime": 1,
+    "lessonDate": "2025-03-03",
+    "type": 0,
+    "note": "517/365;121/bibl.",
+    "group": 2
+  },
+  {
+    "id": 1,
+    "lessonTime": 2,
+    "lessonDate": "2025-03-03",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 8,
+    "lessonTime": 3,
+    "lessonDate": "2025-03-03",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 8,
+    "lessonTime": 4,
+    "lessonDate": "2025-03-03",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 6,
+    "lessonDate": "2025-03-03",
+    "type": 0,
+    "note": "117/353",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 7,
+    "lessonDate": "2025-03-03",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },{
+    "id": 0,
+    "lessonTime": 1,
+    "lessonDate": "2025-02-18",
+    "type": 0,
+    "note": "18/353",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 2,
+    "lessonDate": "2025-02-18",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 3,
+    "lessonDate": "2025-02-18",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 4,
+    "lessonDate": "2025-02-18",
+    "type": 0,
+    "note": "307/353",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 5,
+    "lessonDate": "2025-02-18",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 7,
+    "lessonDate": "2025-02-18",
+    "type": 0,
+    "note": "307/353",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 8,
+    "lessonDate": "2025-02-18",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 1,
+    "lessonDate": "2025-02-25",
+    "type": 0,
+    "note": "18/353",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 2,
+    "lessonDate": "2025-02-25",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 3,
+    "lessonDate": "2025-02-25",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 4,
+    "lessonDate": "2025-02-25",
+    "type": 0,
+    "note": "307/353",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 5,
+    "lessonDate": "2025-02-25",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 5,
+    "lessonTime": 1,
+    "lessonDate": "2025-03-04",
+    "type": 0,
+    "note": "18/353",
+    "group": 2
+  },
+  {
+    "id": 5,
+    "lessonTime": 2,
+    "lessonDate": "2025-03-04",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 5,
+    "lessonTime": 3,
+    "lessonDate": "2025-03-04",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 4,
+    "lessonDate": "2025-03-04",
+    "type": 0,
+    "note": "307/353",
+    "group": 2
+  },
+  {
+    "id": 9,
+    "lessonTime": 5,
+    "lessonDate": "2025-03-04",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 6,
+    "lessonDate": "2025-03-04",
+    "type": 0,
+    "note": "4/353",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 7,
+    "lessonDate": "2025-03-04",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  {
+    "id": 0,
+    "lessonTime": 8,
+    "lessonDate": "2025-03-04",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },{
+    "id": 2,
+    "lessonTime": 4,
+    "lessonDate": "2025-02-27",
+    "type": 0,
+    "note": "109/353",
+    "group": 2
+  },
+  {
+    "id": 2,
+    "lessonTime": 5,
+    "lessonDate": "2025-02-27",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  
+  {
+    "id": 2,
+    "lessonTime": 7,
+    "lessonDate": "2025-02-27",
+    "type": 0,
+    "note": "",
+    "group": 2
+  },
+  
 ]
