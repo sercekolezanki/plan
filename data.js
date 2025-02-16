@@ -79,7 +79,7 @@ const schedule = [
     "lessonTime": 4,
     "lessonDate": "2025-02-17",
     "type": 0,
-    "note": "",
+    "note": "Rozpoczęcie semestru numer 2 sex i samo zdrowie",
     "group": 1
   },
   {
@@ -237,7 +237,7 @@ const schedule = [
     "lessonTime": 4,
     "lessonDate": "2025-02-18",
     "type": 0,
-    "note": "",
+    "note": "307/353",
     "group": 1
   },
   {
