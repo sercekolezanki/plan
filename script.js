@@ -31,12 +31,12 @@ function populateSchedule() {
             if (lesson) {
                 console.log(lesson.note.length)
                 if(lesson.note.length>0)
-                row += `<td class='clickable log' onclick="showInfo('${lesson.type}', ${g},'${lesson.note}')">
+                row += `<td class='clickable log' onclick="showInfo('${lesson.id}','${lesson.note}')">
                             ${subject[lesson.id].short}
                             <div class='progress-bar progress${g}' id='progress-${i}-${g}'></div>
                         </td>`;
                 else
-                row += `<td class='clickable' onclick="showInfo('${lesson.type}', ${g})">
+                row += `<td class='clickable' onclick="showInfo('${lesson.id}','')">
                             ${subject[lesson.id].short}
                             <div class='progress-bar progress${g}' id='progress-${i}-${g}'></div>
                         </td>`;
@@ -50,12 +50,14 @@ function populateSchedule() {
     updateProgressBars();
 }
 
-function showInfo(type, group,info) {
-    
- if(info.length>0){
-alert(info)
- }
+function showInfo(type,info) {
+    if(info.length>0)
+    alert(`${subject[type].name}\n${info}`)
+    else
+    alert(subject[type].name)
+ 
 }
+
 
 
 function updateProgressBars() {
