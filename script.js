@@ -14,7 +14,7 @@ function populateSchedule() {
     const dateInput = document.querySelector(".data");
     const selectedDate = dateInput && dateInput.value ? dateInput.value : new Date().toISOString().split('T')[0];
     
-    const lessonHours = ["8:05", "8:55", "9:50", "10:40", "11:35", "12:25", "13:20", "14:10", "15:05", "16:00", "16:50", "17:40"];
+    const lessonHours = ["8:10", "9:00", "9:55", "10:45", "11:40", "12:30", "13:25", "14:15", "15:10", "16:05", "16:55", "17:45"];
     
     for (let i = 0; i < lessonHours.length; i++) {
         let nextHour = new Date();
@@ -29,15 +29,15 @@ function populateSchedule() {
             
             let lesson = schedule.find(l => l.lessonTime === i + 1 && l.group === g && l.lessonDate === selectedDate);
             if (lesson) {
-                console.log(lesson.note.length)
+                
                 if(lesson.note.length>0)
-                row += `<td class='clickable log' onclick="showInfo('${lesson.id}','${lesson.note}')">
-                            ${subject[lesson.id].short}
+                row += `<td class='clickable log' onclick="showInfo('${lesson.id}','${lesson.note}','${lesson.type}')">
+                            ${subject[lesson.id].short || "ERR" }
                             <div class='progress-bar progress${g}' id='progress-${i}-${g}'></div>
                         </td>`;
                 else
                 row += `<td class='clickable' onclick="showInfo('${lesson.id}','')">
-                            ${subject[lesson.id].short}
+                            ${subject[lesson.id].short || "ERR"}
                             <div class='progress-bar progress${g}' id='progress-${i}-${g}'></div>
                         </td>`;
             } else {
@@ -50,9 +50,9 @@ function populateSchedule() {
     updateProgressBars();
 }
 
-function showInfo(type,info) {
+function showInfo(type,info,t) {
     if(info.length>0)
-    alert(`${subject[type].name}\n${info}`)
+    alert(`${subject[type].name}\n${info}\n${types[t]}`)
     else
     alert(subject[type].name)
  

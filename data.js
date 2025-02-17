@@ -1,9 +1,7 @@
 const types=["Wykład","Ćwiczenia","Laboratoria"];
 
 
-function eI(wykladowca,sala){
-return{owner:wykladowca,sala:sala};
-}
+
 
 
 const subject = [
@@ -61,11 +59,18 @@ const subject = [
         short: "W-F",
         color:"#FCF796"
     },
+    //9
     {
         name: "Algorytmy i struktury danych",
         short: "Osf",
         color:"#5091F9"
     },
+    //10
+    {
+      name: "INNE",
+      short: "INN",
+      color:"#FFFFFF"
+    }
 ];
 function findColor(hex){
     console.log(hex)
@@ -569,6 +574,22 @@ const schedule = [
     "lessonDate": "2025-02-27",
     "type": 0,
     "note": "",
+    "group": 1
+  },
+  {
+    "id": 10,
+    "lessonTime": 5,
+    "lessonDate": "2025-02-21",
+    "type": 0,
+    "note": "Spotkanie organizacyjne 307/353",
+    "group": 1
+  },
+  {
+    "id": 10,
+    "lessonTime": 6,
+    "lessonDate": "2025-02-21",
+    "type": 0,
+    "note": "Spotkanie organizacyjne 307/353",
     "group": 1
   },
   {
