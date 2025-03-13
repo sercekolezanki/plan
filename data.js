@@ -160,7 +160,7 @@ const schedule = [
     "group": 1
   },
   {
-    "id": 0,
+    'id': 0,
     "lessonTime": 7,
     "lessonDate": "2025-02-24",
     "type": 0,
@@ -1083,5 +1083,6 @@ const schedule = [
     "note": "",
     "group": 2
   },
-  
+    {"type":0,"group":1,"id":1,"lessonTime":1,"lessonDate":"2025-03-17","note":"sex"},{"type":0,"group":1,"id":1,"lessonTime":2,"lessonDate":"2025-03-17","note":""},{"type":0,"group":1,"id":8,"lessonTime":3,"lessonDate":"2025-03-17","note":""},{"type":0,"group":1,"id":8,"lessonTime":4,"lessonDate":"2025-03-17","note":""},{"type":0,"group":1,"id":0,"lessonTime":6,"lessonDate":"2025-03-17","note":"4/353"},{"type":0,"group":1,"id":0,"lessonTime":7,"lessonDate":"2025-03-17","note":"4/353"},{"type":0,"group":1,"id":0,"lessonTime":1,"lessonDate":"2025-03-18","note":"18/353"},{"type":0,"group":1,"id":0,"lessonTime":2,"lessonDate":"2025-03-18","note":"18/353"},{"type":0,"group":1,"id":0,"lessonTime":3,"lessonDate":"2025-03-18","note":"18/353"},{"type":0,"group":1,"id":9,"lessonTime":4,"lessonDate":"2025-03-18","note":"307/353"},{"type":0,"group":1,"id":9,"lessonTime":5,"lessonDate":"2025-03-18","note":"307/353"},{"type":0,"group":1,"id":6,"lessonTime":6,"lessonDate":"2025-03-18","note":"117/353"},{"type":0,"group":1,"id":6,"lessonTime":7,"lessonDate":"2025-03-18","note":"117/353"},{"type":0,"group":1,"id":7,"lessonTime":1,"lessonDate":"2025-03-19","note":""},{"type":0,"group":1,"id":7,"lessonTime":2,"lessonDate":"2025-03-19","note":""},{"type":0,"group":1,"id":7,"lessonTime":3,"lessonDate":"2025-03-19","note":""},{"type":0,"group":1,"id":7,"lessonTime":4,"lessonDate":"2025-03-19","note":""},{"type":0,"group":1,"id":7,"lessonTime":5,"lessonDate":"2025-03-19","note":""},{"type":0,"group":1,"id":7,"lessonTime":6,"lessonDate":"2025-03-19","note":""},{"type":0,"group":1,"id":7,"lessonTime":7,"lessonDate":"2025-03-19","note":""},{"type":0,"group":1,"id":7,"lessonTime":8,"lessonDate":"2025-03-19","note":""},{"type":0,"group":1,"id":7,"lessonTime":9,"lessonDate":"2025-03-19","note":""},{"type":0,"group":1,"id":6,"lessonTime":5,"lessonDate":"2025-03-20","note":"307/353"},{"type":0,"group":1,"id":6,"lessonTime":7,"lessonDate":"2025-03-20","note":"307/353"},{"type":0,"group":1,"id":6,"lessonTime":8,"lessonDate":"2025-03-20","note":"307/353"},{"type":0,"group":1,"id":2,"lessonTime":9,"lessonDate":"2025-03-20","note":"307/353"},{"type":0,"group":1,"id":2,"lessonTime":10,"lessonDate":"2025-03-20","note":"307/353"},
+
 ]
